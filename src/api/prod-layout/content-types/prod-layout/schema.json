@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prod_layouts",
+  "info": {
+    "singularName": "prod-layout",
+    "pluralName": "prod-layouts",
+    "displayName": "Prod Layout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "options": {
+      "displayName": "Options",
+      "type": "component",
+      "repeatable": false,
+      "component": "options.options"
+    }
+  }
+}

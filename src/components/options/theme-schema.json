@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_options_theme_schemas",
+  "info": {
+    "displayName": "Theme Schema",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "short_desc": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "button": {
+      "displayName": "Button Option",
+      "type": "component",
+      "repeatable": false,
+      "component": "init.button-option"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "price_sale": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    }
+  }
+}

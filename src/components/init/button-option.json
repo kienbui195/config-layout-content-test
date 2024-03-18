@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_init_button_options",
+  "info": {
+    "displayName": "Button Option",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text_content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

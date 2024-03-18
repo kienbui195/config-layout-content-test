@@ -1,0 +1,105 @@
+{
+  "collectionName": "components_options_options",
+  "info": {
+    "displayName": "Options",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "layout_type": {
+      "type": "enumeration",
+      "enum": [
+        "vertical card",
+        "horizontal card",
+        "list",
+        "chart",
+        "table compare",
+        "only button",
+        "price alert",
+        "video",
+        "image carousel",
+        "image gallery",
+        "books",
+        "news",
+        "coupons"
+      ],
+      "default": "horizontal card",
+      "required": true
+    },
+    "type_of_thumbnail": {
+      "type": "enumeration",
+      "enum": [
+        "store",
+        "prod"
+      ],
+      "default": "prod"
+    },
+    "sortting": {
+      "type": "enumeration",
+      "enum": [
+        "rating[asc]",
+        "rating[desc]",
+        "price[asc]",
+        "price[desc]",
+        "number of order[asc]",
+        "number of order[desc]"
+      ],
+      "default": "rating[desc]"
+    },
+    "show_thumbnail": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_price": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_price_sale": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_discount": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_feature": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_prod_info": {
+      "type": "enumeration",
+      "enum": [
+        "only name",
+        "name and short description"
+      ],
+      "default": "name and short description"
+    },
+    "limit_prod_show": {
+      "type": "integer",
+      "default": 1
+    },
+    "theme_schema": {
+      "type": "string"
+    },
+    "content_button": {
+      "type": "string",
+      "default": "prod name"
+    },
+    "show_price_movers": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_rating": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_store_name": {
+      "type": "boolean",
+      "default": true
+    },
+    "show_button": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

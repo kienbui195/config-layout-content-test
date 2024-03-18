@@ -1,0 +1,46 @@
+{
+  "kind": "singleType",
+  "collectionName": "get_layouts",
+  "info": {
+    "singularName": "get-layout",
+    "pluralName": "get-layouts",
+    "displayName": "Get Layout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_product": {
+      "type": "string"
+    },
+    "choose_layout": {
+      "type": "enumeration",
+      "enum": [
+        "select from exist",
+        "custom"
+      ],
+      "default": "select from exist"
+    },
+    "prod_layout": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::prod-layout.prod-layout"
+    },
+    "prod_layout_custom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "options.options"
+    },
+    "theme": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::theme.theme"
+    },
+    "theme_custom": {
+      "type": "component",
+      "repeatable": false,
+      "component": "options.theme-schema"
+    }
+  }
+}
