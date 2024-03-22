@@ -4,7 +4,8 @@
   "info": {
     "singularName": "get-layout",
     "pluralName": "get-layouts",
-    "displayName": "Get Layout"
+    "displayName": "Get Layout",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -41,6 +42,14 @@
       "type": "component",
       "repeatable": false,
       "component": "options.theme-schema"
+    },
+    "choose_theme": {
+      "type": "enumeration",
+      "enum": [
+        "from existing",
+        "custom"
+      ],
+      "default": "from existing"
     }
   }
 }

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_component_product_infos",
+  "info": {
+    "displayName": "Product Info"
+  },
+  "options": {},
+  "attributes": {
+    "kind_of_info": {
+      "type": "enumeration",
+      "enum": [
+        "only_title",
+        "title_and_short_desc",
+        "title_and_feature",
+        "full"
+      ],
+      "default": "only_title"
+    },
+    "show_more_info": {
+      "type": "boolean",
+      "default": true
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "price_sale": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    }
+  }
+}

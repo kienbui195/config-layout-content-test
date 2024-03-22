@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_layout_lists",
+  "info": {
+    "displayName": "List"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "limit_product": {
+      "type": "integer"
+    },
+    "sort": {
+      "type": "enumeration",
+      "enum": [
+        "title[asc]",
+        "title[desc]",
+        "rating[asc]",
+        "rating[desc]",
+        "orders[asc]",
+        "orders[desc]",
+        "newest",
+        "best_choice"
+      ],
+      "default": "rating[desc]"
+    },
+    "show_rating": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_price_movers": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_discount": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-card"
+    },
+    "info": {
+      "displayName": "Product Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.product-info"
+    },
+    "button_setting": {
+      "displayName": "Button Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-info"
+    }
+  }
+}

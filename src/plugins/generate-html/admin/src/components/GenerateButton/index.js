@@ -92,6 +92,7 @@ const GenerateButton = () => {
               <Typography id="result">
                 Render cây dom sau khi đọc dữ liệu và setting
               </Typography>
+              <input type="" />
             </Box>
           </ModalBody>
           <ModalFooter

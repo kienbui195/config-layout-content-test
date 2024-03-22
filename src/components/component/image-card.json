@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_component_image_cards",
+  "info": {
+    "displayName": "Image Card"
+  },
+  "options": {},
+  "attributes": {
+    "type_of_thumbnail": {
+      "type": "enumeration",
+      "enum": [
+        "product's image",
+        "store's image"
+      ],
+      "default": "product's image"
+    },
+    "link_on_click": {
+      "type": "string",
+      "default": "/"
+    }
+  }
+}

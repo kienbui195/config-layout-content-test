@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_layout_cards",
+  "info": {
+    "displayName": "Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "direction": {
+      "type": "enumeration",
+      "enum": [
+        "vertical",
+        "horizontal"
+      ],
+      "default": "horizontal"
+    },
+    "limit_product": {
+      "type": "integer",
+      "default": "1",
+      "min": "1"
+    },
+    "number_of_cols": {
+      "type": "integer",
+      "default": "1",
+      "min": "1"
+    },
+    "show_price_movers": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_discount": {
+      "type": "boolean",
+      "default": false
+    },
+    "thumbnail": {
+      "displayName": "Image Card",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-card",
+      "required": true
+    },
+    "info": {
+      "displayName": "Product Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.product-info"
+    },
+    "button_setting": {
+      "displayName": "Button Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-info"
+    }
+  }
+}

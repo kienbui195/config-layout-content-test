@@ -1,7 +1,8 @@
 {
   "collectionName": "components_init_text_options",
   "info": {
-    "displayName": "Text Option"
+    "displayName": "Text Option",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -26,7 +27,8 @@
         "normal",
         "italic",
         "underline"
-      ]
+      ],
+      "default": "normal"
     },
     "color": {
       "type": "customField",

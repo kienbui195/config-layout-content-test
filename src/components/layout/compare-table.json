@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_layout_compare_tables",
+  "info": {
+    "displayName": "Compare Table"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "limit_product": {
+      "type": "integer"
+    },
+    "show": {
+      "type": "enumeration",
+      "enum": [
+        "badge_price",
+        "button"
+      ],
+      "default": "button"
+    },
+    "text_setting": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "button_setting": {
+      "displayName": "Button Info",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.button-info"
+    },
+    "badge_price_setting": {
+      "displayName": "Badge Price",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.badge-price"
+    }
+  }
+}

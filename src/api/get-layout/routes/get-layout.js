@@ -1,5 +1,7 @@
 'use strict';
 
+const { policies } = require("../../../plugins/generate-html/server");
+
 /**
  * get-layout router
  */

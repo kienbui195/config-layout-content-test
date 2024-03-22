@@ -887,6 +887,7 @@ export interface ApiGetLayoutGetLayout extends Schema.SingleType {
     singularName: 'get-layout';
     pluralName: 'get-layouts';
     displayName: 'Get Layout';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -907,6 +908,8 @@ export interface ApiGetLayoutGetLayout extends Schema.SingleType {
       'api::theme.theme'
     >;
     theme_custom: Attribute.Component<'options.theme-schema'>;
+    choose_theme: Attribute.Enumeration<['from existing', 'custom']> &
+      Attribute.DefaultTo<'from existing'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -957,12 +960,45 @@ export interface ApiProdLayoutProdLayout extends Schema.CollectionType {
   };
 }
 
+export interface ApiTestLayoutTestLayout extends Schema.SingleType {
+  collectionName: 'test_layouts';
+  info: {
+    singularName: 'test-layout';
+    pluralName: 'test-layouts';
+    displayName: 'Test Layout';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    name_product: Attribute.String;
+    layout: Attribute.DynamicZone<['layout.card']>;
+    theme: Attribute.Component<'options.theme-schema'>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::test-layout.test-layout',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::test-layout.test-layout',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 export interface ApiThemeTheme extends Schema.CollectionType {
   collectionName: 'themes';
   info: {
     singularName: 'theme';
     pluralName: 'themes';
     displayName: 'Theme';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1010,6 +1046,7 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::get-layout.get-layout': ApiGetLayoutGetLayout;
       'api::prod-layout.prod-layout': ApiProdLayoutProdLayout;
+      'api::test-layout.test-layout': ApiTestLayoutTestLayout;
       'api::theme.theme': ApiThemeTheme;
     }
   }

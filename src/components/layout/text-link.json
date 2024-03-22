@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_layout_text_links",
+  "info": {
+    "displayName": "Text Link"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "sort": {
+      "type": "enumeration",
+      "enum": [
+        "title[asc]",
+        "title[desc]",
+        "rating[asc]",
+        "rating[desc]",
+        "pushlised[asc]",
+        "published[desc]",
+        "price[asc]",
+        "price[desc]",
+        "orders[asc]",
+        "orders[desc]"
+      ],
+      "default": "title[asc]"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "price_sale": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    }
+  }
+}

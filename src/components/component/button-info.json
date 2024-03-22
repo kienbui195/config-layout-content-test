@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_component_button_infos",
+  "info": {
+    "displayName": "Button Info"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    },
+    "link_on_click": {
+      "type": "string"
+    },
+    "background_color": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    },
+    "button_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    }
+  }
+}

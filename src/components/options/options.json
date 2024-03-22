@@ -78,9 +78,6 @@
       "type": "integer",
       "default": 1
     },
-    "theme_schema": {
-      "type": "string"
-    },
     "content_button": {
       "type": "string",
       "default": "prod name"

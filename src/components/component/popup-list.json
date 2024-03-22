@@ -1,0 +1,51 @@
+{
+  "collectionName": "components_component_popup_lists",
+  "info": {
+    "displayName": "Popup List"
+  },
+  "options": {},
+  "attributes": {
+    "thumbnail_settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "component.image-card"
+    },
+    "show_price_movers": {
+      "type": "boolean",
+      "default": false
+    },
+    "show_discount": {
+      "type": "boolean",
+      "default": false
+    },
+    "text_settings": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "price_sale": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "show_more_info": {
+      "type": "boolean",
+      "default": true
+    },
+    "button_text": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "button_background": {
+      "type": "customField",
+      "regex": "^#([A-Fa-f0-9]{6}|[A-Fa-f0-9]{3})$",
+      "customField": "plugin::color-picker.color"
+    }
+  }
+}

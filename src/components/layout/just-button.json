@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_layout_just_buttons",
+  "info": {
+    "displayName": "Just Button"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "limit_product": {
+      "type": "integer",
+      "default": 1,
+      "min": 1
+    },
+    "button_setiings": {
+      "displayName": "Just Button",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.just-button"
+    },
+    "mode_popup": {
+      "type": "boolean",
+      "default": false
+    },
+    "popup_list_settings": {
+      "displayName": "Popup List",
+      "type": "component",
+      "repeatable": false,
+      "component": "component.popup-list"
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_layout_galleries",
+  "info": {
+    "displayName": "Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "limit_product": {
+      "type": "integer",
+      "min": 1,
+      "default": 1
+    }
+  }
+}

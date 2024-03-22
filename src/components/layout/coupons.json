@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_coupons",
+  "info": {
+    "displayName": "Coupons"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "short_desc": {
+      "type": "component",
+      "repeatable": false,
+      "component": "init.text-option"
+    },
+    "limit_product": {
+      "type": "integer",
+      "min": 1,
+      "default": 1
+    }
+  }
+}

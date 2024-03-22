@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "test_layouts",
+  "info": {
+    "singularName": "test-layout",
+    "pluralName": "test-layouts",
+    "displayName": "Test Layout"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name_product": {
+      "type": "string"
+    },
+    "layout": {
+      "type": "dynamiczone",
+      "components": [
+        "layout.card"
+      ]
+    },
+    "theme": {
+      "type": "component",
+      "repeatable": false,
+      "component": "options.theme-schema"
+    }
+  }
+}
